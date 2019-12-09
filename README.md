@@ -251,3 +251,5 @@ In this section we will focus on setting up all the necessary components and sof
 8. At this point you must find some way to attach the Pi to the back of the wood frame, wire everything up, and project complete!
 
 ### ----------------------------------------- ADD IMAGE -----------------------------------------
+
+[![Everything Is AWESOME](https://img.youtube.com/vi/StTqXEQ2l-Y/0.jpg)](https://www.youtube.com/watch?v=StTqXEQ2l-Y "Everything Is AWESOME")
