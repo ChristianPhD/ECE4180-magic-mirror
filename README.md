@@ -1,60 +1,16 @@
-<!----- Conversion time: 13.917 seconds.
-
-
-Using this Markdown file:
-
-1. Cut and paste this output into your source file.
-2. See the notes and action items below regarding this conversion run.
-3. Check the rendered output (headings, lists, code blocks, tables) for proper
-   formatting and use a linkchecker before you publish this page.
-
-Conversion notes:
-
-* Docs to Markdown version 1.0β17
-* Sun Dec 08 2019 18:10:13 GMT-0800 (PST)
-* Source doc: https://docs.google.com/open?id=1w6y7XAUbmWnDuNASbWVPW-nrmEwPdyjShc-TSv60uxk
-* This document has images: check for >>>>>  gd2md-html alert:  inline image link in generated source and store images to your server.
------>
-
-
-<p style="color: red; font-weight: bold">>>>>>  gd2md-html alert:  ERRORs: 0; WARNINGs: 0; ALERTS: 11.</p>
-<ul style="color: red; font-weight: bold"><li>See top comment block for details on ERRORs and WARNINGs. <li>In the converted Markdown or HTML, search for inline alerts that start with >>>>>  gd2md-html alert:  for specific instances that need correction.</ul>
-
-<p style="color: red; font-weight: bold">Links to alert messages:</p><a href="#gdcalert1">alert1</a>
-<a href="#gdcalert2">alert2</a>
-<a href="#gdcalert3">alert3</a>
-<a href="#gdcalert4">alert4</a>
-<a href="#gdcalert5">alert5</a>
-<a href="#gdcalert6">alert6</a>
-<a href="#gdcalert7">alert7</a>
-<a href="#gdcalert8">alert8</a>
-<a href="#gdcalert9">alert9</a>
-<a href="#gdcalert10">alert10</a>
-<a href="#gdcalert11">alert11</a>
-
-<p style="color: red; font-weight: bold">>>>>> PLEASE check and correct alert issues and delete this message and the inline alerts.<hr></p>
-
-
-**Home Automation Assistant Connected Smart Mirror**
+# Home Automation Assistant Connected Smart Mirror
 
 ECE-4180-A Fall 2019 Final Project
 
 Developed and maintained by:
-
-
-
 *   Christian Graham
 *   Alex Mathis
 *   Sergio Prudencio 
 *   Steve Sung 
 
-______________________________________________________________________
-
-**Description**
+# Description
 
 The idea behind this project is to build a device that functions as a mirror and allows users to connect with existing home automation assistant devices and software to provide relevant features and information. One could convert any mirror into a personal assistant. 
-
-
 
 *   Features
     *   Time Display
@@ -89,15 +45,11 @@ The idea behind this project is to build a device that functions as a mirror and
     *   **ECE 4180 - Home Automation Assistant Connected Smart Mirror - Quick Look**
         *   [https://youtu.be/iA1w0tOCgMM](https://youtu.be/iA1w0tOCgMM)
 
-______________________________________________________________________
-
-**Software Setup**
+# Software Setup
 
 In this section we will focus on setting up all the necessary components and software to run the Magic Mirror software and install a few of the modules we have running in this version of the software. To do this, ensure you have access to the Raspberry Pi, a Micro SD Card, and all the necessary peripherals to interface with the Pi.
 
-**Installing Rasbian (OS) to the Raspberry Pi 4**
-
-
+## Installing Rasbian (OS) to the Raspberry Pi 4
 
 *   Necessary Components / Software
     *   Raspberry Pi 4*
@@ -110,9 +62,7 @@ In this section we will focus on setting up all the necessary components and sof
 3. Insert the Micro SD Card into your Raspberry Pi and boot the Pi. The Pi should boot directly into the AIY Raspbian OS.
 4. Take a moment to familiarize yourself with the OS if you’ve never used Raspbian before. Set your date/time, create an account with user ID / password, and get connected to your network. The Raspberry Pi 4 supports both wired and wireless network connections.
 
-**Installing the Magic Mirror Software**
-
-
+## Installing the Magic Mirror Software
 
 1. Installing the Magic Mirror software is as easy as cloning the projects GitHub repository. To do this, open up the terminal and paste the following string:
     1. **bash -c "$(curl -sL https://raw.githubusercontent.com/MichMich/MagicMirror/master/installers/raspberry.sh)"**
@@ -125,9 +75,7 @@ In this section we will focus on setting up all the necessary components and sof
 4. If you would like to restart the mirror software, type the following string:
     5. pm2 start MagicMirror
 
-**Configuring the Config File (JavaScript)**
-
-
+## Configuring the Config File (JavaScript)
 
 1. To access the mirror software’s config file, visit the following file path:
     1. **/home/pi/MagicMirror/config**
@@ -154,9 +102,7 @@ In this section we will focus on setting up all the necessary components and sof
 
 5. Further, I changed the default language to english (“en”), timeFormat (“12”), and units (“imperial”).
 
-**Installing Additional Modules (Weather)**
-
-
+## Installing Additional Modules (Weather)
 
 1. We’re going to start by installing a specific weather module called MMM-3Day-Forecast by nigel-daniels.
     1. Official Page:
@@ -171,39 +117,24 @@ In this section we will focus on setting up all the necessary components and sof
 5. Make your way to the mirror softwares config.js file and paste the example module info below:
     6. NOTE: Please visit the official page for additional parameters modifications.
 
-**{**
-
-**    module:     'MMM-3Day-Forecast',**
-
-**    position:   'top_left',**
-
-**	config: {**
-
-**		api_key:    'xxxxxxxxxxxxxxxxxxxxxx',**
-
-**		lat:        37.3397352,**
-
-**		lon:        -121.894958,**
-
-**		units:      'M',**
-
-**		lang:       'en',**
-
-**		interval:   900000**
-
-**	}**
-
-**},**
-
-
+{
+    module:     'MMM-3Day-Forecast',
+    position:   'top_left',
+	config: {
+		api_key:    'xxxxxxxxxxxxxxxxxxxxxx',
+		lat:        37.3397352,
+		lon:        -121.894958,
+		units:      'M',
+		lang:       'en',
+		interval:   900000
+	}
+},
 
 1. You must now visit the following website, sign up for an account, and retrieve an API key in order to retrieve real time weather info.
     1. Weatherbit.io
 2. Once you have acquired the API key, return to the config.js file and paste your API key in the weather module you just created. Additionally, you may update the latitude and longitude of the location it’s polling weather.
 
-**Installing Additional Modules (Spotify)**
-
-
+## Installing Additional Modules (Spotify)
 
 1. Next we’ll install a Spotify module that interacts with the Spotify API called MMM-Spotify by eouia.
     1. Official Page:
@@ -218,31 +149,18 @@ In this section we will focus on setting up all the necessary components and sof
 5. Make your way to the mirror softwares config.js file and paste the example module info below:
     6. NOTE: Please visit the official page for additional parameters modifications.
 
-**{**
-
-**  module: "MMM-Spotify",**
-
-**  position: "bottom_left",**
-
-**  config: {**
-
-**    style: "default", // "default" or "mini" available**
-
-**    control: "default", //"default", "hidden" available**
-
-**    updateInterval: 1000,**
-
-**    onStart: null, // disable onStart feature with `null`**
-
-**    allowDevices: [], //If you want to limit devices to display info, use this.**
-
-**    // allowDevices: ["RASPOTIFY", "My iPhoneX", "My Home speaker"],**
-
-**  }**
-
-**}**
-
-
+{
+  module: "MMM-Spotify",
+  position: "bottom_left",
+  config: {
+    style: "default", // "default" or "mini" available
+    control: "default", //"default", "hidden" available
+    updateInterval: 1000,
+    onStart: null, // disable onStart feature with `null`
+    allowDevices: [], //If you want to limit devices to display info, use this.
+    // allowDevices: ["RASPOTIFY", "My iPhoneX", "My Home speaker"],
+  }
+}
 
 1. Before Spotify will work we’ll need to set up a Spotify developer account and retrieve the API key. Go to the following URL:
     1. [https://developer.spotify.com](https://developer.spotify.com/)
@@ -258,9 +176,7 @@ In this section we will focus on setting up all the necessary components and sof
     4. **cd ~/MagicMirror/modules/MMM-Spotify**
     5. **node first_auth.js**
 
-**Installing Additional Modules (AlexaControl)**
-
-
+## Installing Additional Modules (AlexaControl)
 
 1. Lastly, we're going to install a module that allows us to control the mirror directly through an Amazon Echo. This module is very powerful and can be used in a number of ways. The module is MMM_AlexaControl by JoChef2.
     1. Official Page:
@@ -308,9 +224,7 @@ In this section we will focus on setting up all the necessary components and sof
         6. Shutdown pi
         7. Monitor
 
-______________________________________________________________________
-
-**Mirror Assembly Instructions**
+# Mirror Assembly Instructions
 
 
 
@@ -417,6 +331,3 @@ ______________________________________________________________________
 
 ![alt_text](images/GitHub-Page-File10.jpg "image_tooltip")
 
-
-
-<!-- Docs to Markdown version 1.0β17 -->
