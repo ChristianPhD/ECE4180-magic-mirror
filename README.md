@@ -91,7 +91,7 @@ In this section we will focus on setting up all the necessary components and sof
       - UpdateNotification
       - Alert
 
-![alt text](https://imgur.com/a/YP5Iyao)
+![](https://i.imgur.com/5VNFw3q.png)
 
 5. Further, I changed the default language to ```english``` (“```en```”), ```timeFormat``` (“```12```”), and ```units``` (“```imperial```”).
 
