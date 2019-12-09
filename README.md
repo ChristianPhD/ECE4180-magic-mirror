@@ -39,7 +39,7 @@ The idea behind this project is to build a device that functions as a mirror and
     *   Alexa (optional)
 *   Connections
 
-    [Insert schematic here]
+![](https://i.imgur.com/f2rWI2P.jpg)
 
 ## Demo Videos
 ### ECE 4180 - Home Automation Assistant Connected Smart Mirror - Extended Look
