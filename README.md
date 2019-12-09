@@ -39,11 +39,12 @@ The idea behind this project is to build a device that functions as a mirror and
 
     [Insert schematic here]
 
-*   Demo Videos
-    *   **ECE 4180 - Home Automation Assistant Connected Smart Mirror - Extended Look**
-        *   [https://youtu.be/7e1zBRNagvM](https://youtu.be/7e1zBRNagvM)
-    *   **ECE 4180 - Home Automation Assistant Connected Smart Mirror - Quick Look**
-        *   [https://youtu.be/iA1w0tOCgMM](https://youtu.be/iA1w0tOCgMM)
+## Demo Videos
+### ECE 4180 - Home Automation Assistant Connected Smart Mirror - Extended Look
+[![ECE 4180 - Home Automation Assistant Connected Smart Mirror - Extended Look](http://i3.ytimg.com/vi/7e1zBRNagvM/maxresdefault.jpg)](https://youtu.be/7e1zBRNagvM "ECE 4180 - Home Automation Assistant Connected Smart Mirror - Extended Look")
+
+### ECE 4180 - Home Automation Assistant Connected Smart Mirror - Quick Look
+[![ECE 4180 - Home Automation Assistant Connected Smart Mirror - Quick Look](http://i3.ytimg.com/vi/iA1w0tOCgMM/maxresdefault.jpg)](https://youtu.be/iA1w0tOCgMM "ECE 4180 - Home Automation Assistant Connected Smart Mirror - Quick Look")
 
 # Software Setup
 
@@ -252,4 +253,3 @@ In this section we will focus on setting up all the necessary components and sof
 
 ### ----------------------------------------- ADD IMAGE -----------------------------------------
 
-[![Everything Is AWESOME](https://img.youtube.com/vi/StTqXEQ2l-Y/0.jpg)](https://www.youtube.com/watch?v=StTqXEQ2l-Y "Everything Is AWESOME")
