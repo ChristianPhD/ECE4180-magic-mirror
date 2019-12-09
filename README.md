@@ -65,20 +65,20 @@ In this section we will focus on setting up all the necessary components and sof
 ## Installing the Magic Mirror Software
 
 1. Installing the Magic Mirror software is as easy as cloning the projects GitHub repository. To do this, open up the terminal and paste the following string:
-    1. **bash -c "$(curl -sL https://raw.githubusercontent.com/MichMich/MagicMirror/master/installers/raspberry.sh)"**
+    1. ```bash -c "$(curl -sL https://raw.githubusercontent.com/MichMich/MagicMirror/master/installers/raspberry.sh)"```
     2. NOTE: Visit the official site for all documentation.
         1. [https://magicmirror.builders/](https://magicmirror.builders/)
 2. I recommend pressing “y” when it asks you if you would like to install PM2 as this is the mirror softwares autoboot function. After installation it should boot directly into the mirror software.
     3. The mirror software can be closed with “ctrl+Q”.
 3. At this point if the mirror software closes for any reason it will reboot itself every 10 seconds. To stop this, open up the terminal and enter the following string:
-    4. pm2 stop MagicMirror
+    4. ```pm2 stop MagicMirror```
 4. If you would like to restart the mirror software, type the following string:
-    5. pm2 start MagicMirror
+    5. ```pm2 start MagicMirror```
 
 ## Configuring the Config File (JavaScript)
 
 1. To access the mirror software’s config file, visit the following file path:
-    1. **/home/pi/MagicMirror/config**
+    1. ```/home/pi/MagicMirror/config```
 2. Here you should find a file called “config.js”. This is the mirror software’s configuration file. If, for any reason, you mess up your config file simply copy the sample config file (same folder) and rename it to “config.js”.
 3. Open “config.js” with any text editor. Here you can change the mirror’s time format, default language, default units, modules, etc. This is where the majority of our time will be spent when editing the mirror’s functionality.
 4. If you do not want a module to display on the mirror, simply comment it out or delete it (bracket to bracket). Remember to save your work before leaving the text editor.
@@ -100,7 +100,7 @@ In this section we will focus on setting up all the necessary components and sof
 
 
 
-5. Further, I changed the default language to english (“en”), timeFormat (“12”), and units (“imperial”).
+5. Further, I changed the default language to ```english``` (“```en```”), ```timeFormat``` (“```12```”), and ```units``` (“```imperial```”).
 
 ## Installing Additional Modules (Weather)
 
@@ -108,15 +108,16 @@ In this section we will focus on setting up all the necessary components and sof
     1. Official Page:
         1. [https://github.com/nigel-daniels/MMM-3Day-Forecast](https://github.com/nigel-daniels/MMM-3Day-Forecast)
 2. Open the terminal and navigate to your modules folder, you can do this by pasting the following string into the terminal:
-    2. **cd ~/MagicMirror/modules**
+    2. ```cd ~/MagicMirror/modules```
 3. Clone the GitHub repository by pasting the following string in the terminal:
-    3. **git clone https://github.com/nigel-daniels/MMM-3Day-Forecast**
+    3. ```git clone https://github.com/nigel-daniels/MMM-3Day-Forecast```
 4. Once that’s done, to install additional dependencies paste the following strings into the terminal:
-    4. **cd ~/MMM-3Day-Forecast**
-    5. **npm install**
+    4. ```cd ~/MMM-3Day-Forecast```
+    5. ```npm install```
 5. Make your way to the mirror softwares config.js file and paste the example module info below:
     6. NOTE: Please visit the official page for additional parameters modifications.
 
+```
 {
     module:     'MMM-3Day-Forecast',
     position:   'top_left',
@@ -129,6 +130,7 @@ In this section we will focus on setting up all the necessary components and sof
 		interval:   900000
 	}
 },
+```
 
 1. You must now visit the following website, sign up for an account, and retrieve an API key in order to retrieve real time weather info.
     1. Weatherbit.io
@@ -140,15 +142,16 @@ In this section we will focus on setting up all the necessary components and sof
     1. Official Page:
         1. [https://github.com/eouia/MMM-Spotify](https://github.com/eouia/MMM-Spotify)
 2. Open the terminal and navigate to your modules folder, you can do this by pasting the following string into the terminal:
-    2. **cd ~/MagicMirror/modules**
+    2. ```cd ~/MagicMirror/modules```
 3. Clone the GitHub repository by pasting the following string in the terminal:
-    3. **git clone https://github.com/eouia/MMM-Spotify**
+    3. ```git clone https://github.com/eouia/MMM-Spotify```
 4. Once that’s done, to install additional dependencies paste the following strings into the terminal:
-    4. **cd ~/MMM-Spotify**
-    5. **npm install**
+    4. ```cd ~/MMM-Spotify```
+    5. ```npm install```
 5. Make your way to the mirror softwares config.js file and paste the example module info below:
     6. NOTE: Please visit the official page for additional parameters modifications.
 
+```
 {
   module: "MMM-Spotify",
   position: "bottom_left",
@@ -161,20 +164,21 @@ In this section we will focus on setting up all the necessary components and sof
     // allowDevices: ["RASPOTIFY", "My iPhoneX", "My Home speaker"],
   }
 }
+```
 
 1. Before Spotify will work we’ll need to set up a Spotify developer account and retrieve the API key. Go to the following URL:
     1. [https://developer.spotify.com](https://developer.spotify.com/)
 2. Once there, navigate to “dashboard” > “create an app”
 3. Setup the app and hit “edit settings”
 4. Change the redirect URI’s to the following:
-    2. [http://localhost:8888/callback](http://localhost:8888/callback)
+    2. ```http://localhost:8888/callback```
 5. Now copy your Client ID and Client Secret. We will need these for the next few steps.
 6. Make your way to the following path and rename spotify.config.json.example to spotify.config.json:
-    3. /MagicMirror/modules/MMM-Spotify
+    3. ```/MagicMirror/modules/MMM-Spotify```
 7. Once you’ve done this, open the .json file and paste your Client ID and Client Secret. Save and close this file.
 8. You can retrieve authorization by pasting the following strings in the terminal:
-    4. **cd ~/MagicMirror/modules/MMM-Spotify**
-    5. **node first_auth.js**
+    4. ```cd ~/MagicMirror/modules/MMM-Spotify```
+    5. ```node first_auth.js```
 
 ## Installing Additional Modules (AlexaControl)
 
@@ -182,33 +186,26 @@ In this section we will focus on setting up all the necessary components and sof
     1. Official Page:
         1. [https://github.com/JoChef2/MMM-AlexaControl](https://github.com/JoChef2/MMM-AlexaControl)
 2. Open the terminal and navigate to your modules folder, you can do this by pasting the following string into the terminal:
-    2. **cd ~/MagicMirror/modules**
+    2. ```cd ~/MagicMirror/modules```
 3. Clone the GitHub repository by pasting the following string in the terminal:
-    3. **git clone https://github.com/JoChef2/MMM-AlexaControl.git**
+    3. ```git clone https://github.com/JoChef2/MMM-AlexaControl.git```
 4. Once that’s done, to install additional dependencies paste the following strings into the terminal:
-    4. **cd ~/MMM-AlexaControl**
-    5. **npm install**
+    4. ```cd ~/MMM-AlexaControl```
+    5. ```npm install```
 5. Make your way to the mirror softwares config.js file and paste the example module info below:
     6. NOTE: Please visit the official page for additional parameters modifications.
 
-**{**
-
-**        module: 'MMM-AlexaControl',**
-
-**        position: 'middle_center',**
-
-**        config:{**
-
-**            image: true,**
-
-**            pm2ProcessName: "mm",**
-
-**            vcgencmd: true**
-
-**        }**
-
-**    }**
-
+```
+{
+        module: 'MMM-AlexaControl',
+        position: 'middle_center',
+        config:{
+            image: true,
+            pm2ProcessName: "mm",
+            vcgencmd: true
+        }
+    }
+```
 
 
 1. Once the mirror software is booted up, ensure your smart mirror and Amazon Echo are on the same network.
@@ -225,8 +222,6 @@ In this section we will focus on setting up all the necessary components and sof
         7. Monitor
 
 # Mirror Assembly Instructions
-
-
 
 1. Remove the monitor stand from the LCD panel
 
