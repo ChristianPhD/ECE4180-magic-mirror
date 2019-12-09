@@ -65,6 +65,8 @@ In this section we will focus on setting up all the necessary components and sof
 
 ## Installing the Magic Mirror Software
 
+![](https://i.imgur.com/I6WG5EI.png)
+
 1. Installing the Magic Mirror software is as easy as cloning the projects GitHub repository. To do this, open up the terminal and paste the following string:
     1. ```bash -c "$(curl -sL https://raw.githubusercontent.com/MichMich/MagicMirror/master/installers/raspberry.sh)"```
     2. NOTE: Visit the official site for all documentation.
@@ -96,6 +98,8 @@ In this section we will focus on setting up all the necessary components and sof
 5. Further, I changed the default language to ```english``` (“```en```”), ```timeFormat``` (“```12```”), and ```units``` (“```imperial```”).
 
 ## Installing Additional Modules (Weather)
+
+![](https://github.com/nigel-daniels/MMM-3Day-Forecast/blob/master/3day.png)
 
 1. We’re going to start by installing a specific weather module called MMM-3Day-Forecast by nigel-daniels.
     1. Official Page:
@@ -130,6 +134,8 @@ In this section we will focus on setting up all the necessary components and sof
 2. Once you have acquired the API key, return to the config.js file and paste your API key in the weather module you just created. Additionally, you may update the latitude and longitude of the location it’s polling weather.
 
 ## Installing Additional Modules (Spotify)
+
+![](https://github.com/eouia/MMM-Spotify/blob/master/screenshots/spotify_mini.png)
 
 1. Next we’ll install a Spotify module that interacts with the Spotify API called MMM-Spotify by eouia.
     1. Official Page:
@@ -174,6 +180,8 @@ In this section we will focus on setting up all the necessary components and sof
     - ```node first_auth.js```
 
 ## Installing Additional Modules (AlexaControl)
+
+![](https://m.media-amazon.com/images/G/01/DeveloperBlogs/AmazonDeveloperBlogs/legacy/Amazon-Alexa-logo_transparent12._CB520208230_.png)
 
 1. Lastly, we're going to install a module that allows us to control the mirror directly through an Amazon Echo. This module is very powerful and can be used in a number of ways. The module is MMM_AlexaControl by JoChef2.
     1. Official Page:
