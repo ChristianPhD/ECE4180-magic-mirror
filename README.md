@@ -1,3 +1,4 @@
-# ECE4180-magic-mirror
+# ECE4180 Magic Mirror Final Project
 
-Place introduction here
+Developed and maintained by:
+- 
