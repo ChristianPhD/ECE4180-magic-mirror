@@ -226,33 +226,35 @@ In this section we will focus on setting up all the necessary components and sof
 
 1. Remove the monitor stand from the LCD panel
 
-### ----------------------------------------- ADD IMAGE -----------------------------------------
+![](https://i.imgur.com/KeoTGO5.jpg)
+
+![](https://i.imgur.com/cP3GG0L.jpg)
 
 2. Trace the monitor on to the black styrofoam and cut with an exacto knife. The black styrofoam is used to fill and ensure the blank area surrounding the monitor also functions as a mirror. 
 
-### ----------------------------------------- ADD IMAGE -----------------------------------------
+![](https://i.imgur.com/xc3AGgp.jpg)
 
 3. Place the modified black styrofoam backing into the back of the mirror frame and position the monitor facing down (screen facing the front of the mirror). 
 
-### ----------------------------------------- ADD IMAGE -----------------------------------------
+![](https://i.imgur.com/QaK3u6Z.jpg)
+
+![](https://i.imgur.com/gUmu27f.jpg)
 
 4. Using a miter saw, create four 4”x10” and two 2”x4” wood pieces.
 
-### ----------------------------------------- ADD IMAGE -----------------------------------------
+![](https://i.imgur.com/3nSGma1.jpg)
 
 5. Drill two 4”x10” pieces to the bottom of the mirror frame, bracing the bottom of the monitor.
 
-### ----------------------------------------- ADD IMAGE -----------------------------------------
+![](https://i.imgur.com/raS7QoO.jpg)
 
 6. Drill two 2”x4” pieces to the bottom left and right of the monitor, bracing the sides.
 
-### ----------------------------------------- ADD IMAGE -----------------------------------------
-
 7. Drill the remaining 4”x10” pieces on the top, mirroring the bottom, to complete securing the monitor. Finish by drilling strips of thin wood to prevent the monitor from falling out backwards.
 
-### ----------------------------------------- ADD IMAGE -----------------------------------------
+![](https://i.imgur.com/HaN9WD4.jpg)
 
 8. At this point you must find some way to attach the Pi to the back of the wood frame, wire everything up, and project complete!
 
-### ----------------------------------------- ADD IMAGE -----------------------------------------
+![](https://i.imgur.com/Nk8vqG4.jpg)
 
