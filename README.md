@@ -8,6 +8,8 @@ Developed and maintained by:
 *   Sergio Prudencio 
 *   Steve Sung 
 
+![](https://i.imgur.com/NpxwskH.jpg)
+
 # Description
 
 The idea behind this project is to build a device that functions as a mirror and allows users to connect with existing home automation assistant devices and software to provide relevant features and information. One could convert any mirror into a personal assistant. 
